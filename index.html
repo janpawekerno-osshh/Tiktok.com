@@ -2,6 +2,44 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <title>Śmieszne dźwięki</title>
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 22px;
+            border-radius: 12px;
+            border: none;
+            background: #ff4444;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kliknij, żeby odpalić dźwięk 😈</h1>
+    <button onclick="playSound()">Kliknij mnie</button>
+
+    <audio id="sound" src="sound.mp3"></audio>
+
+    <script>
+        function playSound() {
+            const audio = document.getElementById('sound');
+            audio.play();
+        }
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memy</title>
     <style>
